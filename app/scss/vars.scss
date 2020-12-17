@@ -1,0 +1,35 @@
+$orange: rgba(251, 143, 29, 1);
+$maincolor: rgba(32, 35, 54, 1);
+$secondcolor: rgba(125, 121, 135, 1);
+// --------------------------------
+
+
+
+
+@mixin main-title() {
+    font-size: 64px;
+    font-family: PlayfairDisplay;
+    line-height: 80px;
+}
+
+@mixin second-title() {
+    font-size: 36px;
+    font-family: PlayfairDisplay;
+    line-height: 50px;
+}
+
+@mixin main-btn() {
+    font-family: Inter-500;
+    font-size: 16px;
+    background: rgba(251, 143, 29, 1);
+    border: 3px solid rgba(251, 143, 29, 1);
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 10px 32px;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        background: #ffffff;
+        color: rgba(251, 143, 29, 1);
+    }
+}
