@@ -53,9 +53,61 @@
   </header>
 
   <!-- offer -->
-  <section class="offer">
+  <section class="offer section">
    <div class="container">
-    
+    <div class="offer__wrap">
+      <div class="offer__desc">
+        <h1 class="offer__title">
+          Explore and Travel
+        </h1>
+        <p class="offer__subtitle">
+          Holiday finder
+        </p>
+        <form class="offer__form" action="#">
+          <div class="input__wrap">
+            <select name="location" id="" required>
+              <option disabled selected value="location">Location</option>
+              <option value="Korea">Korea</option>
+              <option value="Australia">Australia</option>
+              <option value="Turkey">Turkey</option>
+            </select>
+          </div>
+          <div class="input__wrap">
+            <select name="Activity" id="" required>
+              <option disabled selected value="Activity">Activity</option>
+              <option value="Hike">Hike</option>
+              <option value="Swimming">Swimming</option>
+              <option value="Horseback-riding">Horseback riding</option>
+            </select>
+          </div>
+          <div class="input__wrap">
+            <select name="grade" id="" required>
+              <option disabled selected value="grade">Grade</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="input__wrap">
+            <select name="date" id="" required>
+              <option disabled selected value="date">Date</option>
+              <option value="17.01">17.01</option>
+              <option value="27.01">27.01</option>
+              <option value="15.02">15.02</option>
+            </select>
+          </div>
+          <button class="form__btn" type="submit" >
+            Explore
+          </button>
+        </form>
+      </div>
+      <div class="offer__img">
+        <picture>
+          <source srcset="img/offer.webp" type="image/webp">
+          <img src="img/offer.png" alt="offer-img">
+        </picture>
+      </div>
+    </div>
    </div>
   </section>
     <!-- --------------мой файл JS-------------------->

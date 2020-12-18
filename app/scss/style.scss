@@ -12,6 +12,10 @@ body.lock {
     overflow: hidden;
 }
 
+.section {
+    padding: 100px 0px;
+}
+
 .container {
     max-width: 1250px;
     padding: 0px 15px;
@@ -26,12 +30,107 @@ body.lock {
 @import "header";
 
 /*------------- offer -------------------*/
+.offer {
+    padding-top: 200px;
+}
+
+.offer__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer__desc {
+    max-width: 500px;
+}
+
+.offer__img {
+    max-width: 500px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.offer__title {
+    @include main-title();
+    max-width: 360px;
+    margin: 0px 60px 0px 0px;
+}
+
+.offer__subtitle {
+    font-family: Inter-700;
+    position: relative;
+    margin-bottom: 60px;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 3px;
+        background: $maincolor;
+        left: 0;
+        bottom: -20px;
+    }
+}
 
 
+.offer__form {
+    max-width: 430px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.input__wrap {
+    width: 200px;
+    height: 55px;
+    position: relative;
+    margin-bottom: 25px;
+    padding: 0px 10px 0px 0px;
 
+    &:after {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 2px;
+        background: $secondcolor;
+        top: 50%;
+        right: 40px;
+        transform: rotate(45deg);
+        pointer-events: none;
+    }
 
+    &:before {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 2px;
+        background: $secondcolor;
+        top: 50%;
+        right: 30px;
+        transform: rotate(-45deg);
+        pointer-events: none;
+    }
 
+    select {
+        width: 100%;
+        height: 100%;
+        appearance: none;
+        padding: 0px 0px 0px 15px;
+        border: 1px solid $secondcolor;
+        border-radius: 6px;
+
+        &:focus {
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4), 3px 3px 10px rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+.form__btn {
+    @include main-btn;
+    padding: 15px 63px;
+}
 
 
 
@@ -51,11 +150,5 @@ body.lock {
 
 
 /*---------------------------------------*/
-.offer {
-    font-size: 30px;
-}
-
-p {
-    padding: 0px 100px;
-    margin-bottom: 50px;
-}
+/*---------- media -------*/
+@import "media";

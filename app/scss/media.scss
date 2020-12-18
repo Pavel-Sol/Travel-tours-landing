@@ -1,0 +1,40 @@
+@media screen and (max-width: 992px) {
+    .offer__wrap {
+        flex-direction: column-reverse;
+    }
+
+    .offer__desc {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .offer {
+        padding-top: 110px;
+        text-align: center;
+    }
+
+    .offer__title {
+        margin: 20px auto 30px auto;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .offer__subtitle {
+        &::after {
+            left: 50%;
+            transform: translate(-50%, 0px);
+        }
+    }
+
+    .input__wrap {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .form__btn {
+        width: 100%;
+    }
+}
