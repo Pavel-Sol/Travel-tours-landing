@@ -3,6 +3,7 @@
     width: 100%;
     position: fixed;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    z-index: 19;
 
     &::before {
         content: '';

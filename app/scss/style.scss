@@ -7,7 +7,7 @@
 /*----------Переменные, миксины ...-------*/
 @import "vars";
 
-/*----------Спецификация-------*/
+/*---------- общие стили -------*/
 body.lock {
     overflow: hidden;
 }
@@ -25,6 +25,41 @@ body.lock {
 .btn {
     @include main-btn;
 }
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.img {
+    width: 50%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.desc {
+    width: 40%;
+}
+
+.desc__title {
+    @include second-title();
+}
+
+.desc__text {
+    color: rgba(125, 121, 135, 1);
+    font-size: 17px;
+    line-height: 30px;
+    font-family: Mulish;
+    margin: 20px 0px
+}
+
+.btn {
+    @include main-btn();
+}
+
 
 /*------------- header -------------------*/
 @import "header";
@@ -132,23 +167,16 @@ body.lock {
     padding: 15px 63px;
 }
 
+/*------------- new day -------------------*/
+
+/*------------- guides -------------------*/
+
+.guides__wrap {
+    flex-direction: row-reverse
+}
+
+/*------------- destinations -------------------*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------------------------*/
 /*---------- media -------*/
 @import "media";
