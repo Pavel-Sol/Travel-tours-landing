@@ -9,6 +9,16 @@
         max-width: 100%;
     }
 
+    // destinations
+    .destinations__content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .destinations__item {
+        flex: 1 1 40%;
+    }
+
 }
 
 
@@ -75,5 +85,31 @@
         width: 100%;
     }
 
+
+    .link {
+        transform: translate(0px, 0px);
+    }
+
+    // destinations
+
+    .destinations__title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .destinations__item {
+        flex: 0 1 70%;
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+    .arrow-prew,
+    .arrow-next {
+        display: block;
+    }
 
 }
