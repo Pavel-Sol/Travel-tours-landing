@@ -127,6 +127,12 @@ body.lock {
   margin: 0px auto;
 }
 
+.common-title {
+  font-size: 36px;
+  font-family: PlayfairDisplay;
+  line-height: 50px;
+}
+
 .btn {
   font-family: Inter-500;
   font-size: 16px;
@@ -585,12 +591,6 @@ body.lock {
 }
 
 /*------------- destinations -------------------*/
-.destinations__title {
-  font-size: 36px;
-  font-family: PlayfairDisplay;
-  line-height: 50px;
-}
-
 .destinations__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -703,6 +703,123 @@ body.lock {
   line-height: 25px;
 }
 
+/*---------- testimonials --------------*/
+.testimonials__title {
+  font-size: 36px;
+  font-family: PlayfairDisplay;
+  line-height: 50px;
+  padding-left: 20px;
+}
+
+.slider {
+  margin-top: 40px;
+}
+
+.slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider__item__desc {
+  max-width: 500px;
+  padding: 0px 0px 0px 20px;
+}
+
+.slider__item__stars-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 180px;
+}
+
+.slider__item__stars-wrap img {
+  width: 20px;
+}
+
+.slider__item__desc__text {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: Mulish;
+  color: #202336;
+  margin: 30px 0px 20px 0px;
+}
+
+.slider__item__desc__member {
+  font-size: 22px;
+  line-height: 28px;
+  font-family: Inter-700;
+}
+
+.slider__item__desc__member span {
+  font-size: 18px;
+  font-family: Inter-500;
+  color: #7d7987;
+}
+
+.slider__item__img {
+  max-width: 500px;
+}
+
+.slider__item__img img {
+  width: 90%;
+  border-radius: 20px;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider .slick-list {
+  overflow: hidden;
+}
+
+.slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.slick-arrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #eb7514;
+  font-size: 0;
+  border-radius: 50%;
+  bottom: 40px;
+  z-index: 15;
+}
+
+.slick-arrow:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.slick-next {
+  right: 50%;
+  background: url(../img/right-arrow.png) no-repeat center center/cover;
+}
+
+.slick-prev {
+  left: 50%;
+  margin-left: -150px;
+  background: url(../img/left-arrow.png) no-repeat center center/cover;
+}
+
 /*---------- media -------*/
 @media screen and (max-width: 992px) {
   .offer__wrap {
@@ -726,6 +843,12 @@ body.lock {
         -ms-flex: 1 1 40%;
             flex: 1 1 40%;
   }
+  .slider__item__desc {
+    max-width: 400px;
+  }
+  .slick-arrow {
+    bottom: -40px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -745,6 +868,40 @@ body.lock {
   .desc {
     width: 90%;
   }
+  .slider__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .slider__item__desc {
+    max-width: 90%;
+    padding: 0px 0px 0px 0px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .slider__item__stars-wrap {
+    margin: 0px auto;
+  }
+  .slider__item__img {
+    text-align: center;
+  }
+  .slider__item__img img {
+    width: 70%;
+  }
+  .slick-next {
+    right: 0;
+    top: 200px;
+  }
+  .slick-prev {
+    left: 0;
+    margin-left: 0px;
+    top: 200px;
+  }
+  .slider__item__desc__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -752,6 +909,12 @@ body.lock {
     line-height: 25px;
   }
   .desc__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .common-title {
+    text-align: center;
+    margin-bottom: 20px;
     font-size: 30px;
     line-height: 40px;
   }
@@ -782,12 +945,6 @@ body.lock {
     -webkit-transform: translate(0px, 0px);
         -ms-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-  }
-  .destinations__title {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 30px;
-    line-height: 40px;
   }
   .destinations__item {
     -webkit-box-flex: 0;

@@ -7,6 +7,7 @@ burger.addEventListener('click', function () {
     this.classList.toggle('active')
 })
 
+
 // слайдер нативный
 const arrowPrew = document.querySelector('.arrow-prew');
 const arrowNext = document.querySelector('.arrow-next');
@@ -33,3 +34,14 @@ arrowNext.addEventListener('click', function () {
     }
     destinationsItems[countSliders].classList.remove('hidden')
 })
+
+
+// слайдер Sclick testimonials
+
+$(document).ready(function () {
+    $(".slider").slick({
+        slidesToShow: 1,
+        arrows: true,
+        adaptiveHeight: true,
+    });
+});

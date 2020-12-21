@@ -22,6 +22,10 @@ body.lock {
     margin: 0px auto;
 }
 
+.common-title {
+    @include second-title();
+}
+
 .btn {
     @include main-btn;
 }
@@ -187,9 +191,6 @@ body.lock {
 }
 
 /*------------- destinations -------------------*/
-.destinations__title {
-    @include second-title();
-}
 
 .destinations__content {
     display: flex;
@@ -288,6 +289,108 @@ body.lock {
         line-height: 25px;
     }
 
+}
+
+
+/*---------- testimonials --------------*/
+.testimonials__title {
+    @include second-title();
+    padding-left: 20px;
+}
+
+.slider {
+    margin-top: 40px;
+}
+
+.slider__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider__item__desc {
+    max-width: 500px;
+    padding: 0px 0px 0px 20px;
+}
+
+.slider__item__stars-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+
+    img {
+        width: 20px;
+    }
+}
+
+.slider__item__desc__text {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: Mulish;
+    color: $maincolor;
+    margin: 30px 0px 20px 0px;
+}
+
+.slider__item__desc__member {
+    font-size: 22px;
+    line-height: 28px;
+    font-family: Inter-700;
+
+    span {
+        font-size: 18px;
+        font-family: Inter-500;
+        color: $secondcolor;
+    }
+}
+
+.slider__item__img {
+    max-width: 500px;
+
+    img {
+        width: 90%;
+        border-radius: 20px;
+    }
+}
+
+// ---------
+.slider {
+    position: relative;
+}
+
+.slider .slick-list {
+    overflow: hidden;
+}
+
+.slider .slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.slick-arrow {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(235, 117, 20);
+    font-size: 0;
+    border-radius: 50%;
+    bottom: 40px;
+    z-index: 15;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.slick-next {
+    right: 50%;
+    background: url(../img/right-arrow.png) no-repeat center center/ cover;
+}
+
+.slick-prev {
+    left: 50%;
+    margin-left: -150px;
+    background: url(../img/left-arrow.png) no-repeat center center/ cover;
 }
 
 /*---------- media -------*/

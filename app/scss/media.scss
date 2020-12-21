@@ -19,6 +19,15 @@
         flex: 1 1 40%;
     }
 
+
+    // testimonials
+    .slider__item__desc {
+        max-width: 400px;
+    }
+
+    .slick-arrow {
+        bottom: -40px;
+    }
 }
 
 
@@ -42,6 +51,45 @@
         width: 90%;
     }
 
+    // testimonials
+    .slider__item {
+        flex-direction: column-reverse;
+    }
+
+    .slider__item__desc {
+        max-width: 90%;
+        padding: 0px 0px 0px 0px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .slider__item__stars-wrap {
+        margin: 0px auto;
+    }
+
+    .slider__item__img {
+        text-align: center;
+
+        img {
+            width: 70%;
+        }
+    }
+
+    .slick-next {
+        right: 0;
+        top: 200px;
+    }
+
+    .slick-prev {
+        left: 0;
+        margin-left: 0px;
+        top: 200px;
+    }
+
+    .slider__item__desc__text {
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -52,6 +100,13 @@
     }
 
     .desc__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .common-title {
+        text-align: center;
+        margin-bottom: 20px;
         font-size: 30px;
         line-height: 40px;
     }
@@ -91,13 +146,6 @@
     }
 
     // destinations
-
-    .destinations__title {
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 30px;
-        line-height: 40px;
-    }
 
     .destinations__item {
         flex: 0 1 70%;
