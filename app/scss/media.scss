@@ -28,6 +28,17 @@
     .slick-arrow {
         bottom: -40px;
     }
+
+    // stories
+    .stories__content {
+        flex-wrap: wrap;
+    }
+
+    .stories__item {
+        flex: 0 1 45%;
+        margin: 0px 10px 30px 0px;
+    }
+
 }
 
 
@@ -143,6 +154,7 @@
 
     .link {
         transform: translate(0px, 0px);
+        margin-bottom: 30px;
     }
 
     // destinations
@@ -158,6 +170,15 @@
     .arrow-prew,
     .arrow-next {
         display: block;
+    }
+
+    // stories
+    .stories__item {
+        flex: 0 1 262px;
+    }
+
+    .stories__content {
+        justify-content: center;
     }
 
 }
