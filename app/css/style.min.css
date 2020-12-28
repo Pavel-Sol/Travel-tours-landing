@@ -886,6 +886,59 @@ body.lock {
   text-decoration: underline;
 }
 
+/*----------  footer --------------*/
+.footer {
+  background-color: #f9f9fb;
+  padding: 70px 0px 40px 0px;
+  color: #848484;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: Mulish;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__text-wrap {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 390px;
+          flex: 0 1 390px;
+}
+
+.footer__text-wrap .foooter__text {
+  margin-bottom: 40px;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__nav__column {
+  padding: 0px 25px;
+}
+
+.footer__nav__column a,
+.footer__nav__column a:active {
+  display: block;
+  color: #848484;
+  margin: 10px 0px;
+}
+
+.footer__nav__column a:hover {
+  color: black;
+}
+
+.footer__nav__column__title {
+  font-size: 19px;
+  font-weight: bold;
+  color: black;
+}
+
 /*---------- media -------*/
 @media screen and (max-width: 992px) {
   .offer__wrap {
@@ -924,6 +977,22 @@ body.lock {
         -ms-flex: 0 1 45%;
             flex: 0 1 45%;
     margin: 0px 10px 30px 0px;
+  }
+  .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__text-wrap {
+    max-width: 420px;
+    margin-top: 30px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
   }
 }
 
@@ -977,6 +1046,13 @@ body.lock {
   .slider__item__desc__text {
     font-size: 18px;
     line-height: 24px;
+  }
+  .footer__nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__nav__column {
+    width: 50%;
   }
 }
 
@@ -1044,5 +1120,12 @@ body.lock {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .footer__nav__column {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .footer__nav__column a {
+    margin: 0;
   }
 }

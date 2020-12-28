@@ -1,0 +1,45 @@
+.footer {
+    background-color: rgba(249, 249, 251, 1);
+    padding: 70px 0px 40px 0px;
+    color: rgba(132, 132, 132, 1);
+    font-size: 18px;
+    line-height: 28px;
+    font-family: Mulish;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.footer__text-wrap {
+    flex: 0 1 390px;
+
+    .foooter__text {
+        margin-bottom: 40px;
+    }
+}
+
+.footer__nav {
+    display: flex;
+}
+
+.footer__nav__column {
+    padding: 0px 25px;
+
+    a,
+    a:active {
+        display: block;
+        color: rgba(132, 132, 132, 1);
+        margin: 10px 0px;
+    }
+
+    a:hover {
+        color: black;
+    }
+}
+
+.footer__nav__column__title {
+    font-size: 19px;
+    font-weight: bold;
+    color: black;
+}

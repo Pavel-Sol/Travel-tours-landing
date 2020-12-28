@@ -39,6 +39,17 @@
         margin: 0px 10px 30px 0px;
     }
 
+    // footer
+    .footer-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer__text-wrap {
+        max-width: 420px;
+        margin-top: 30px;
+        flex: 0 1 auto;
+    }
 }
 
 
@@ -100,6 +111,15 @@
     .slider__item__desc__text {
         font-size: 18px;
         line-height: 24px;
+    }
+
+    // footer 
+    .footer__nav {
+        flex-wrap: wrap;
+    }
+
+    .footer__nav__column {
+        width: 50%;
     }
 }
 
@@ -181,4 +201,13 @@
         justify-content: center;
     }
 
+    // footer 
+    .footer__nav__column {
+        width: 90%;
+        margin: 20px auto;
+
+        a {
+            margin: 0;
+        }
+    }
 }
