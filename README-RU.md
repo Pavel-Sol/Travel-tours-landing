@@ -15,4 +15,4 @@
 - Html5
 - SCSS
 - JS 
-- GILP
+- GULP

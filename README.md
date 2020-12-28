@@ -16,4 +16,4 @@ Technologies used on this project:
 - Html5
 - SCSS
 - JS 
-- GILP
+- GULP
